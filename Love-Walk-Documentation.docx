@@ -1,0 +1,125 @@
+Love Walk Website Documentation
+
+Project Overview
+---------------
+The Love Walk website is a faith-based platform created to inspire and guide individuals on their spiritual journey. The website features multiple pages including a home page, blog section, about page, resources section, and contact form.
+
+Website Structure
+---------------
+1. index.html - Homepage
+   - Featured article section
+   - Recent articles grid
+   - Navigation menu
+   - Responsive design
+
+2. blog.html - Blog Page
+   - Featured blog header
+   - Blog post grid
+   - Article previews with read more links
+
+3. about.html - About Page
+   - Mission and Vision statements
+   - Core Values section
+   - Team member profiles
+   - Interactive cards with hover effects
+
+4. resources.html - Resources Page
+   - Featured resources section
+   - Downloadable content
+   - Resource categories (Video, Audio, Study Guides)
+   - Free downloads section
+
+5. contact.html - Contact Page
+   - Contact form
+   - Additional contact information
+   - Social media links
+
+Styling
+-------
+- Custom CSS variables for consistent theming
+- Responsive design for all screen sizes
+- Interactive elements with hover effects
+- Font Awesome icons integration
+- Google Fonts: Playfair Display and Lato
+
+Color Scheme
+-----------
+- Primary Color: #6B4CE6
+- Secondary Color: #9B7AE6
+- Accent Color: #FFB74D
+- Text Color: #2C3E50
+- Background Color: #F8F9FA
+- White: #ffffff
+
+Development Steps
+---------------
+1. Initial Setup
+   - Created basic HTML structure
+   - Set up CSS styling
+   - Implemented responsive design
+
+2. Page Development
+   - Created homepage with featured content
+   - Developed blog page with article grid
+   - Built about page with team section
+   - Implemented resources page with downloadable content
+   - Created contact form with styling
+
+3. Styling Enhancements
+   - Added hover effects
+   - Implemented animations
+   - Created consistent design across pages
+   - Ensured mobile responsiveness
+
+4. GitHub Deployment
+   - Initialized Git repository
+   - Created .gitignore file
+   - Made initial commit
+   - Pushed to GitHub repository
+   - Set up GitHub Pages for deployment
+
+Git Commands Used
+---------------
+1. git init - Initialized new Git repository
+2. git branch -m main - Renamed branch to main
+3. git add . - Added all files to staging
+4. git commit -m "Initial commit: Love Walk website files" - Created first commit
+5. git remote add origin https://github.com/Hermy10/Love-Walk.git - Added remote repository
+6. git push -u origin main - Pushed code to GitHub
+
+GitHub Pages Deployment
+---------------------
+Website URL: https://hermy10.github.io/Love-Walk/
+
+Repository Structure
+------------------
+Love-Walk/
+├── index.html
+├── blog.html
+├── about.html
+├── resources.html
+├── contact.html
+├── css/
+│   └── style.css
+├── images/
+│   └── Pipeops-logo-dark.png
+└── .gitignore
+
+Future Enhancements
+-----------------
+1. Add blog post content pages
+2. Implement a search function
+3. Add user authentication
+4. Create a newsletter subscription
+5. Add more interactive features
+
+Maintenance
+----------
+Regular updates needed for:
+- Content updates
+- Security patches
+- Feature enhancements
+- Performance optimization
+- Browser compatibility checks
+
+This documentation was created on February 23, 2025.
