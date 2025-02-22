@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Love Walk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .mission-card, .vision-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .team-section {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .member-image i {
+            font-size: 5rem;
+            color: var(--white);
+            opacity: 0.8;
+        }
+
+        .member-info {
+            padding: 2rem;
+        }
+
+        .member-name {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .member-role {
+            color: var(--secondary-color);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .values-section {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+        }
+
+        .value-card:hover .value-icon {
+            color: var(--white);
+        }
+
+        .value-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            transition: var(--transition);
+        }
+
+        .value-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 2rem 1rem;
+            }
+
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Pipeops-logo-dark.png" alt="Faith Journey Logo">
+            <h1>Your Faith Journey</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="blog.html"><i class="fas fa-book-reader"></i> Blog</a></li>
+                <li><a href="about.html"><i class="fas fa-heart"></i> About</a></li>
+                <li><a href="resources.html"><i class="fas fa-bookmark"></i> Resources</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-article">
+            <h2>About Us</h2>
+            <p>Discover our story, mission, and the passionate team behind Your Faith Journey.</p>
+        </section>
+
+        <section class="about-section">
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <i class="fas fa-compass card-icon"></i>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p>To inspire and guide individuals on their spiritual journey, fostering a deeper connection with faith through meaningful content, community engagement, and personal growth resources.</p>
+                </div>
+                <div class="vision-card">
+                    <i class="fas fa-eye card-icon"></i>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p>To create a global community where faith, love, and understanding flourish, empowering individuals to live purposeful lives guided by spiritual principles and mutual respect.</p>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h2>Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-heart value-icon"></i>
+                        <h3 class="value-title">Love</h3>
+                        <p>Embracing and sharing God's unconditional love in all we do.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-hands-helping value-icon"></i>
+                        <h3 class="value-title">Service</h3>
+                        <p>Dedicated to serving others with compassion and humility.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users value-icon"></i>
+                        <h3 class="value-title">Community</h3>
+                        <p>Building meaningful connections and supporting each other's growth.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-book-open value-icon"></i>
+                        <h3 class="value-title">Growth</h3>
+                        <p>Committed to continuous learning and spiritual development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Sarah Johnson</h3>
+                            <p class="member-role">Founder & Lead Writer</p>
+                            <p class="member-bio">With over 15 years of experience in spiritual guidance and writing, Sarah leads our content creation with passion and insight.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Michael Chen</h3>
+                            <p class="member-role">Community Manager</p>
+                            <p class="member-bio">Michael brings warmth and engagement to our community, fostering meaningful connections among members.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Rachel Thompson</h3>
+                            <p class="member-role">Content Curator</p>
+                            <p class="member-bio">Rachel carefully selects and creates resources that inspire and guide our community members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Faith Journey. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

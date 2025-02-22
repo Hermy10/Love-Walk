@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Love Walk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resources-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .resource-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .resource-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 2rem;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-description {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .resource-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-links li {
+            margin-bottom: 1rem;
+        }
+
+        .resource-links a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+            padding: 0.5rem;
+            border-radius: 6px;
+        }
+
+        .resource-links a:hover {
+            background-color: rgba(107, 76, 230, 0.1);
+            transform: translateX(5px);
+        }
+
+        .resource-links i {
+            font-size: 1.2rem;
+        }
+
+        .featured-resources {
+            margin-bottom: 4rem;
+        }
+
+        .featured-resource {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            transition: var(--transition);
+        }
+
+        .featured-resource:hover {
+            transform: translateY(-5px);
+        }
+
+        .featured-resource-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            background: rgba(107, 76, 230, 0.1);
+            padding: 1rem;
+            border-radius: 12px;
+        }
+
+        .featured-resource-content {
+            flex-grow: 1;
+        }
+
+        .featured-resource h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .featured-resource p {
+            margin-bottom: 1rem;
+        }
+
+        .featured-resource .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .download-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--white);
+            margin-top: 4rem;
+        }
+
+        .download-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .download-section p {
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .download-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            transition: var(--transition);
+        }
+
+        .download-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .download-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .resources-section {
+                padding: 2rem 1rem;
+            }
+
+            .featured-resource {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Pipeops-logo-dark.png" alt="Faith Journey Logo">
+            <h1>Your Faith Journey</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="blog.html"><i class="fas fa-book-reader"></i> Blog</a></li>
+                <li><a href="about.html"><i class="fas fa-heart"></i> About</a></li>
+                <li><a href="resources.html"><i class="fas fa-bookmark"></i> Resources</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-article">
+            <h2>Faith Resources</h2>
+            <p>Discover tools, guides, and materials to support your spiritual growth and development.</p>
+        </section>
+
+        <section class="resources-section">
+            <div class="featured-resources">
+                <div class="featured-resource">
+                    <div class="featured-resource-icon">
+                        <i class="fas fa-book-bible"></i>
+                    </div>
+                    <div class="featured-resource-content">
+                        <h3>Daily Devotional Guide</h3>
+                        <p>Start your day with inspiring devotionals, scripture readings, and reflections. Perfect for establishing a consistent spiritual practice.</p>
+                        <a href="#" class="button">Download Now <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="featured-resource">
+                    <div class="featured-resource-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="featured-resource-content">
+                        <h3>Prayer Journal Template</h3>
+                        <p>A beautifully designed journal to help you maintain a meaningful prayer life and track your spiritual journey.</p>
+                        <a href="#" class="button">Get Template <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <i class="fas fa-video resource-icon"></i>
+                        <h3 class="resource-title">Video Series</h3>
+                    </div>
+                    <div class="resource-content">
+                        <p class="resource-description">Access our collection of inspiring and educational video content.</p>
+                        <ul class="resource-links">
+                            <li><a href="#"><i class="fas fa-play-circle"></i> Faith Foundations</a></li>
+                            <li><a href="#"><i class="fas fa-play-circle"></i> Prayer Practices</a></li>
+                            <li><a href="#"><i class="fas fa-play-circle"></i> Scripture Study</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <i class="fas fa-book-reader resource-icon"></i>
+                        <h3 class="resource-title">Study Guides</h3>
+                    </div>
+                    <div class="resource-content">
+                        <p class="resource-description">Comprehensive guides for deeper biblical understanding.</p>
+                        <ul class="resource-links">
+                            <li><a href="#"><i class="fas fa-file-pdf"></i> Beginner's Guide</a></li>
+                            <li><a href="#"><i class="fas fa-file-pdf"></i> Advanced Studies</a></li>
+                            <li><a href="#"><i class="fas fa-file-pdf"></i> Topic Studies</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <i class="fas fa-headphones resource-icon"></i>
+                        <h3 class="resource-title">Audio Content</h3>
+                    </div>
+                    <div class="resource-content">
+                        <p class="resource-description">Listen to sermons, teachings, and inspirational content.</p>
+                        <ul class="resource-links">
+                            <li><a href="#"><i class="fas fa-podcast"></i> Weekly Podcast</a></li>
+                            <li><a href="#"><i class="fas fa-music"></i> Worship Music</a></li>
+                            <li><a href="#"><i class="fas fa-microphone"></i> Guided Prayers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h2>Free Downloads</h2>
+                <p>Access our collection of free resources to enhance your spiritual journey.</p>
+                <div class="download-grid">
+                    <div class="download-card">
+                        <i class="fas fa-calendar-alt download-icon"></i>
+                        <h3>Bible Reading Plan</h3>
+                        <p>Annual reading schedule</p>
+                        <a href="#" class="button">Download</a>
+                    </div>
+                    <div class="download-card">
+                        <i class="fas fa-journal-whills download-icon"></i>
+                        <h3>Prayer Journal</h3>
+                        <p>Printable journal pages</p>
+                        <a href="#" class="button">Download</a>
+                    </div>
+                    <div class="download-card">
+                        <i class="fas fa-book download-icon"></i>
+                        <h3>Study Worksheets</h3>
+                        <p>Comprehensive study aids</p>
+                        <a href="#" class="button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Faith Journey. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
